@@ -21,8 +21,7 @@ print("本地时间为：", localtime)
 
 str = "现在"
 # print("{0}时间为：{1}", (time.ctime(time.time())))
-print("{0}时间为：{1}" .format(str, (time.ctime(time.time()))))
-
+print("{0}时间为：{1}".format(str, (time.ctime(time.time()))))
 
 # 格式化日期
 # 我们可以使用 time 模块的 strftime 方法来格式化日期，
@@ -36,7 +35,6 @@ print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime()))
 # 将格式字符串转换为时间戳
 a = "Wed Mar 29 13:55:10 2017"
 print(time.mktime(time.strptime(a, "%a %b %d %H:%M:%S %Y")))
-
 
 '''
 python中时间日期格式化符号：
@@ -64,8 +62,6 @@ python中时间日期格式化符号：
 %% %号本身
 '''
 
-
-
 # 获取某月日历
 # Calendar模块有很广泛的方法用来处理年历和月历，例如打印某月的月历：
 import calendar
@@ -82,18 +78,15 @@ print("time.asctime(t): %s " % time.asctime(t))
 
 # time.ctime([secs])
 # 作用相当于asctime(localtime(secs))，未给参数相当于asctime()
-print ("time.ctime() : %s" % time.ctime())
-
+print("time.ctime() : %s" % time.ctime())
 
 # time.sleep(secs)
 # 推迟调用线程的运行，secs指秒数。
 print("Start : %s" % time.ctime())
-time.sleep( 2 )
+time.sleep(2)
 print("End   : %s" % time.ctime())
 
-
 t = (2017, 3, 29, 17, 3, 38, 1, 48, 0)
-secs = time.mktime( t )
-print ("time.mktime(t) : %f" %  secs)
-print ("asctime(localtime(secs)): %s" % time.asctime(time.localtime(secs)))
-
+secs = time.mktime(t)
+print("time.mktime(t) : %f" % secs)
+print("asctime(localtime(secs)): %s" % time.asctime(time.localtime(secs)))
