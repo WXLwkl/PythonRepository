@@ -1,0 +1,3 @@
+
+error：s is not int.
+你好啊！

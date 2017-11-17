@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome, {{username}}</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <p>Welcome,{{username}}</p>
+    {% for i in page_list %}
+    <a href="/page/{{ i }}">{{ i }}</a>
+    {% endfor %}
+</body>
+</html>
+
+
+
+
