@@ -6,6 +6,18 @@ __author__ = 'xingl'
 
 
 
+import random
+
+print('num1:%d' % random.randint(0,99)) #生成一个指定范围内的整数
+print('num2:%d' % random.randrange(0, 101, 2)) #生成一个0到100之间的偶数
+print('num3:%d' % random.uniform(10, 20)) #生成一个指定范围内的随机浮点数
+print('num4:%d' % random.random()) #0到1之间
+
+
+
+
+
+print('-----------------------------------')
 
 age = 26
 
